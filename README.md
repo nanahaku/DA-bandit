@@ -8,7 +8,7 @@ We are running this with Python 3.7.16.We cannot guarantee functionality with ot
 Also, we use the mosek module to find the optimal solution.
 Please refer to (https://www.mosek.com/).
 
-The Jester dataset we used is from (Goldberg et al., 2001) (http://www.ieor.berkeley.edu/~goldberg/pubs/eigentaste.pdf)
+The Jester dataset we used is from (Goldberg et al., 2001) (http://www.ieor.berkeley.edu/~goldberg/pubs/eigentaste.pdf).
 
 The Household dataset is cited from (Kroer et al., 2021) (https://arxiv.org/abs/1901.06230).
 

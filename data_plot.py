@@ -10,7 +10,8 @@ import pandas as pd
 import json
 #from tqdm import tqdm
 
-
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
 
 
 #select dataset
@@ -36,7 +37,7 @@ if dataset == 'household_10_50':
 
 #set parameters
 n, m = v.shape
-T = 300000
+T = 100000
 B = np.ones(n) / n
 seed_count=20
 #normalize v
@@ -238,15 +239,15 @@ np.savetxt(os.path.join(fpath, 'regret_UCB_mean.txt'), regret_UCB_mean, fmt='%.4
 #plot the results
 fig = plt.figure(figsize=(6, 4))
 plt.plot(regret_random_mean,marker="o",markevery=0.1,label='Random',color='black',markersize=6)
-plt.plot(regret_ETC_mean,marker="v",markevery=0.1,label='DA-ETC',color='blue',markersize=6)
-plt.plot(regret_greedy_mean,marker="D",markevery=0.1,label='DA-greedy',color='green',markersize=6)
+plt.plot(regret_ETC_mean,marker="v",markevery=0.1,label='DA-EtC',color='blue',markersize=6)
+plt.plot(regret_greedy_mean,marker="D",markevery=0.1,label='DA-Grdy',color='green',markersize=6)
 plt.plot(regret_DA_UCB_mean,marker=">",markevery=0.1,label='DA-UCB',color='orange',markersize=6)
 plt.plot(regret_UCB_mean,marker="s",markevery=0.1,label='UCB',color='purple',markersize=6)
-plt.title('Uniform', fontsize=18)
-#plt.title('Jester', fontsize=18)
-#plt.title('Household', fontsize=18)
-plt.xlabel('rounds',fontsize=12)
-plt.ylabel('regret',fontsize=12)
+plt.title('Uniform', fontsize=22)
+#plt.title('Jester', fontsize=22)
+#plt.title('Household (50×50)', fontsize=22)
+plt.xlabel('rounds',fontsize=14)
+plt.ylabel('regret',fontsize=14)
 plt.xticks(fontsize=10)
 plt.yticks(fontsize=10)
 plt.grid(linestyle='dotted')
@@ -256,14 +257,14 @@ plt.clf()
 
 
 fig = plt.figure(figsize=(6, 4))
-plt.plot(regret_ETC_mean,marker="v",markevery=0.1,label='DA-ETC',color='blue',markersize=6)
-plt.plot(regret_greedy_mean,marker="D",markevery=0.1,label='DA-greedy',color='green',markersize=6)
-plt.plot(regret_DA_UCB_mean,marker=">",markevery=0.1,label='DA-UCB',color='orange',markersize=6)
-plt.title('Uniform', fontsize=18)
-#plt.title('Jester', fontsize=18)
-#plt.title('Household', fontsize=18)
-plt.xlabel('rounds',fontsize=12)
-plt.ylabel('regret',fontsize=12)
+plt.plot(regret_ETC_mean,marker="v",markevery=10000,label='DA-EtC',color='blue',markersize=6)
+plt.plot(regret_greedy_mean,marker="D",markevery=10000,label='DA-Grdy',color='green',markersize=6)
+plt.plot(regret_DA_UCB_mean,marker=">",markevery=10000,label='DA-UCB',color='orange',markersize=6)
+plt.title('Uniform', fontsize=22)
+#plt.title('Jester', fontsize=22)
+#plt.title('Household (50×50)', fontsize=22)
+plt.xlabel('rounds',fontsize=14)
+plt.ylabel('regret',fontsize=14)
 plt.xticks(fontsize=10)
 plt.yticks(fontsize=10)
 plt.grid(linestyle='dotted')
