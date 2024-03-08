@@ -1,2 +1,4 @@
 __pycache__/
-dataset/
+dataset/household_10_50.csv
+dataset/household_50_50.csv
+dataset/Jokes_10_50.csv

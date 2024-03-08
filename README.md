@@ -4,13 +4,14 @@ Implementation of "Learning Fair Division from Bandit Feedback" (https://arxiv.o
 
 
 # Getting Started
-We are running this with Python 3.7.16.We cannot guarantee functionality with other versions.
-Also, we use the mosek module to find the optimal solution.
-Please refer to (https://www.mosek.com/).
+We are running this with Python 3.7.16. We cannot guarantee functionality with other versions.
+Also, we use the mosek module to find the optimal solution. Please refer to (https://www.mosek.com/).
 
 The Jester dataset we used is from (Goldberg et al., 2001) (http://www.ieor.berkeley.edu/~goldberg/pubs/eigentaste.pdf).
 
 The Household dataset is cited from (Kroer et al., 2021) (https://arxiv.org/abs/1901.06230).
+
+Please refer to this URL (https://github.com/alexpeys/market_datasets) for datasets used other than Uniform.
 
 In creating the source code, we referred to (Gao et al.)(https://proceedings.neurips.cc/paper/2021/hash/e562cd9c0768d5464b64cf61da7fc6bb-Abstract.html).
 
