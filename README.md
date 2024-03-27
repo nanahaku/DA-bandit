@@ -1,4 +1,4 @@
-# PACE-bandit
+# DA-bandit
 Implementation of "Learning Fair Division from Bandit Feedback" (https://arxiv.org/abs/2311.09068)
 
 
