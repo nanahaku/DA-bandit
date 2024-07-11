@@ -1,7 +1,7 @@
 # DA-bandit
 Implementation of "Learning Fair Division from Bandit Feedback" (https://arxiv.org/abs/2311.09068)
 
-
+ 
 
 # Getting Started
 We are running this with Python 3.7.16. We cannot guarantee functionality with other versions.
