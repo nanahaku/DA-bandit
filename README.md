@@ -16,6 +16,7 @@ Please refer to this URL (https://github.com/alexpeys/market_datasets) for datas
 In creating the source code, we referred to (Gao et al.)(https://proceedings.neurips.cc/paper/2021/hash/e562cd9c0768d5464b64cf61da7fc6bb-Abstract.html).
 
 # Running the experiments
+## DA-EtC, DA-UCB
 At first, choose the dataset to use from the following candidates:
 
 ```
@@ -38,6 +39,33 @@ python experiment_DA-greedy.py
 python experiment_DA-UCB.py
 python experiment_random.py
 python experiment_UCB.py
+```
+
+Finally, run the following for data plotting:
+```
+python data_plot.py
+```
+
+## linear-DA-EtC, linear-DA-UCB
+At first, choose the dataset to use from the following candidates:
+
+```
+'Uniform_10_10'
+'movielens_1500_1500'
+```
+
+Next, run:
+```
+python compute_mosek.py  
+```
+
+
+Then, set the parameters and run the following:
+```
+python experiment_DA-EtC.py
+python experiment_DA-UCB.py
+python experiment_linear-DA-EtC.py
+python experiment_linear-DA-UCB.py
 ```
 
 Finally, run the following for data plotting:
