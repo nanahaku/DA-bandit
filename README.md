@@ -9,7 +9,7 @@ Also, we use the mosek module to find the optimal solution. Please refer to (htt
 
 The Jester dataset we used is from (Goldberg et al., 2001) (http://www.ieor.berkeley.edu/~goldberg/pubs/eigentaste.pdf).
 
-The Household dataset is cited from (Kroer et al., 2021) (https://arxiv.org/abs/1901.06230).
+The Household and Movielens dataset is cited from (Kroer et al., 2021) (https://arxiv.org/abs/1901.06230).
 
 Please refer to this URL (https://github.com/alexpeys/market_datasets) for datasets used other than Uniform.
 
