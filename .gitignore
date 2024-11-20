@@ -2,3 +2,14 @@ __pycache__/
 dataset/household_10_50.csv
 dataset/household_50_50.csv
 dataset/Jokes_10_50.csv
+dataset/movielens_1500_1500.csv
+test/
+linear/linear_ols.py
+linear/linear_nnls.py
+linear/linear_ols.py
+linear/naive.py
+linear/plot.ipynb
+linear/dataset/household_50_50.csv
+linear/dataset/movielens_1500_1500.csv
+linear/results
+linear/plots
